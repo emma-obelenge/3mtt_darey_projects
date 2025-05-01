@@ -8,25 +8,30 @@ body {
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
-    color: #4caf50;
+    color: yellow;
     cursor: pointer;
 }
-header,
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    height: 5rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 2px 1rem;
+    background-color: #45a049;
+}
 nav ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    flex-wrap: wrap;
     align-items: center;
-    background-color: #f4f4f4;
 }
 
-header {
-    position: fixed;
-    width: 100%;
-    padding: 2px 1rem;
-}
 nav {
     margin-left: auto;
 }
@@ -51,7 +56,9 @@ nav ul li:hover {
 a {
     text-decoration: none;
     font-size: 1rem;
+    color: black;
 }
+
 /* Hero Section */
 .hero {
     background-color: #4caf50;
