@@ -4,104 +4,23 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Responsive Landing Page</title>
-        <style>
-            /* General Styles */
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                line-height: 1.6;
-                color: #333;
-            }
-
-            /* Hero Section */
-            .hero {
-                background-color: #4caf50;
-                color: white;
-                text-align: center;
-                padding: 50px 20px;
-            }
-
-            .hero h1 {
-                font-size: 2.5rem;
-                margin-bottom: 10px;
-            }
-
-            .hero p {
-                font-size: 1.2rem;
-                margin-bottom: 20px;
-            }
-
-            .cta-button {
-                background-color: white;
-                color: #4caf50;
-                border: none;
-                padding: 10px 20px;
-                font-size: 1rem;
-                cursor: pointer;
-                border-radius: 5px;
-                text-decoration: none;
-            }
-
-            .cta-button:hover {
-                background-color: #45a049;
-                color: white;
-            }
-
-            /* Features Section */
-            .features {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                padding: 20px;
-                background-color: #f4f4f4;
-            }
-
-            .feature {
-                flex: 1 1 300px;
-                margin: 10px;
-                text-align: center;
-                padding: 20px;
-                background: white;
-                border-radius: 8px;
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            }
-
-            .feature img {
-                max-width: 100px;
-                margin-bottom: 10px;
-            }
-
-            .feature h3 {
-                font-size: 1.5rem;
-                margin-bottom: 10px;
-            }
-
-            .feature p {
-                font-size: 1rem;
-                color: #666;
-            }
-
-            /* Footer Section */
-            .footer {
-                text-align: center;
-                padding: 20px;
-                background-color: #333;
-                color: white;
-            }
-
-            .footer a {
-                color: #4caf50;
-                text-decoration: none;
-            }
-
-            .footer a:hover {
-                text-decoration: underline;
-            }
-        </style>
+        <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
         <!-- Hero Section -->
+        <header class="hero-header">
+            <a href="index.html"><h1 class="logo">Nootek</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#product">Products</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
         <section class="hero">
             <h1>Welcome to Our Product</h1>
             <p>
@@ -114,7 +33,7 @@
         <!-- Features Section -->
         <section id="features" class="features">
             <div class="feature">
-                <img src="feature1.png" alt="Feature 1" />
+                <img src="./img/feature1.jpg" alt="Feature 1" />
                 <h3>Feature One</h3>
                 <p>
                     Discover the amazing benefits of our first feature. It’s
@@ -122,7 +41,7 @@
                 </p>
             </div>
             <div class="feature">
-                <img src="feature2.png" alt="Feature 2" />
+                <img src="./img/feature2.jpg" alt="Feature 2" />
                 <h3>Feature Two</h3>
                 <p>
                     Our second feature is all about efficiency and productivity.
@@ -130,7 +49,7 @@
                 </p>
             </div>
             <div class="feature">
-                <img src="feature3.png" alt="Feature 3" />
+                <img src="./img/feature3.jpg" alt="Feature 3" />
                 <h3>Feature Three</h3>
                 <p>
                     Experience the power of innovation with our third feature.
@@ -148,7 +67,7 @@
                 >
                 | Phone: +2348030980657
             </p>
-            <p>&copy; 2025 Emmanuel Obelenge. All rights reserved.</p>
+            <p>&copy; 2025 NooTek. All rights reserved.</p>
         </footer>
     </body>
 </html>
